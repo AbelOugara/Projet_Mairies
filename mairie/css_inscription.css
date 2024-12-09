@@ -1,0 +1,154 @@
+/* Généralités de la page */
+body {
+    margin: 0;
+}
+
+/* Mise en page principale */
+main {
+    font-size: 30px;
+    display: flex;
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: center; /* Centre le contenu verticalement */
+    height: 82vh; /* La hauteur de la page entière */
+    background: linear-gradient(180deg, rgb(158, 229, 255), rgb(113, 230, 240)); /* Dégradé en diagonale */
+}
+
+/* Styles pour la zone du formulaire */
+.formulaire {
+    width: 350px; /* Largeur fixe de la zone du formulaire */
+    padding: 30px; /* Espacement interne autour du formulaire */
+    background: linear-gradient(135deg, rgb(208, 249, 255), rgb(236, 245, 255)); /* Dégradé pour la zone */
+    border-radius: 10px; /* Coins arrondis pour un meilleur design */
+    box-shadow: 10px 10px 12px rgb(104, 215, 255),
+                -10px -10px 12px rgb(113, 232, 236); /* Ombres multiples pour plus de profondeur */
+
+}
+
+/* Style pour le titre */
+h4 {
+    color: rgb(67, 105, 232); /* Bleu foncé légèrement désaturé */
+    margin-bottom: 10px; /* Espacement agrandi pour mieux séparer le titre */
+    text-shadow: 2px 2px 4px rgba(102, 100, 100, 0.5); /* Ombre noire douce */
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Ligne sous le titre */
+hr {
+    border: 0;
+    border-top: 2px solid #1a10a5; /* Ligne de 2px de large */
+    width: 70%; /* Prend 70% de la largeur du formulaire */
+    margin-top: 10px; /* Espacement entre le titre et la ligne */
+    margin-bottom: 60px; /* Espacement entre la ligne et le formulaire */
+}
+
+/* Styles pour chaque champ du formulaire (image + input) */
+.champ {
+    display: flex; /* Aligne les éléments sur une ligne */
+    align-items: center; /* Aligne verticalement l'image et l'input */
+    gap: 6px; /* Espace entre l'image et l'input */
+    margin-bottom: 15px; /* Espacement entre chaque champ */
+}
+
+/* Styles pour les inputs (champs de texte) */
+.champ input {
+    flex: 1; /* L'input occupe tout l'espace disponible à droite de l'image */
+    padding: 10px; /* Espace intérieur pour les inputs */
+    font-size: 16px; /* Taille du texte */
+    border: 1px solid #ccc; /* Bordure pour les inputs */
+    border-radius: 50px; /* Coins arrondis */
+    background: linear-gradient(135deg, rgb(215, 244, 248), rgb(217, 232, 249)); /* Dégradé de fond */
+    box-shadow: 7px 7px 10px rgb(143, 172, 221); /* Ombre douce autour des inputs */
+
+}
+
+
+/* Effet de focus sur les inputs (au clic) */
+.champ input:focus {
+    background: linear-gradient(135deg, rgb(231, 251, 254), rgb(219, 236, 255)); /* Changement de fond en focus */
+    outline: none; /* Retire la bordure par défaut */
+    border: 1px solid #802fd7; /* Définir une bordure personnalisée, ici une bordure grise */
+}
+
+
+/* Groupe pour le bouton d'envoi */
+.champ_envoi {
+    display: flex; /* Aligne tout dans le conteneur */
+    justify-content: center; /* Centre horizontalement le bouton */
+    margin-top: 60px; /* Espacement entre le bouton et le reste */
+}
+
+/* Style du bouton d'envoi */
+.champ_envoi button {
+    display: flex; /* Permet de placer l'icône et le texte ensemble */
+    align-items: center; /* Centre verticalement l'icône et le texte */
+    gap: 8px; /* Espacement entre l'icône et le texte */
+    width: 160px; /* Largeur fixe du bouton */
+    padding: 10px; /* Espacement interne */
+    font-size: 16px; /* Taille du texte */
+    color: rgb(60, 149, 227); /* Couleur du texte */
+    background: linear-gradient(135deg, rgb(71, 252, 255), rgb(146, 245, 247)); /* Dégradé de fond */
+    border: 1px solid #7680a9; /* Bordure fine */
+    border-radius: 50px; /* Coins arrondis */
+    box-shadow: 7px 7px 10px rgb(143, 172, 221); /* Ombre douce autour du bouton */
+    /*cursor: pointer; /* Curseur clic pour le bouton */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Effet au survol */
+}
+
+/* Effet au survol du bouton */
+.champ_envoi button:hover {
+    background: linear-gradient(135deg, rgb(251, 226, 252), rgb(255, 156, 255)); /* Changement de couleur */
+    transform: scale(1.02); /* Légère augmentation de la taille du bouton */
+}
+
+/* Icône à l'intérieur du bouton */
+.champ_envoi button img {
+    width: 20px; /* Taille de l'icône */
+    height: auto; /* Conserve les proportions */
+}
+
+/* Taille des icônes dans les champs de texte */
+.champ img {
+    width: 30px; /* Taille des icônes */
+    height: auto; /* Conserve les proportions de l'image */
+}
+
+/* Styles des erreurs */
+.error {
+    background-color: rgb(255, 228, 228); /* Fond rose clair pour les erreurs */
+    color: red; /* Texte rouge */
+    padding: 1px; /* Espacement autour du texte d'erreur */
+    margin-top: 40px; /* Espacement avec le reste du formulaire */
+    border-radius: 35px; /* Coins arrondis pour les erreurs */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère autour des erreurs */
+    font-size: 14px; /* Taille du texte des erreurs */
+
+    display: flex; /* Utilisation de flexbox pour aligner l'icône et le texte */
+    align-items: center; /* Centrer verticalement l'icône et le texte */
+    gap: 5px; /* Espacement entre l'icône et le texte */
+
+    display: flex;
+}
+
+.error img {
+    width: 20px; /* Taille de l'icône */
+    height: auto; /* Conserver les proportions */
+
+}
+
+
+.error p {
+    animation: fadeIn 0.5s ease-in-out;
+    color: red;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+

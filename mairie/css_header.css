@@ -1,0 +1,42 @@
+body{
+    margin: 0; /* permet d'éviter un espacement blanc autours de ma barre de navigation*/
+}
+
+header{ /* concerne le header et tout se qui s'y trouve dedans */
+    font-size: 25px; /* taille de la police */
+    font-weight: 500; /* épaisseur de la police */
+    padding: 20px; /* Le padding permet de créer un espace supplémentaire à l'intérieur d'un élément */
+    background: linear-gradient( to right, rgb(255, 255, 255), rgb(190, 239, 255));
+
+    position: sticky; /* Rend le header fixe */
+    top: 0; /* Définit la distance par rapport au haut de la page */
+    z-index: 1000; /* Met le header au-dessus des autres éléments */
+
+    border-bottom: 10px solid black; /* créer une ligne en dessous de mon header. (peut-être qu'il existe une meilleur solution).*/
+}
+
+nav ul{ /* concerne le 'ul' dans le 'nav', c'est le style de la barre de navigation */
+    list-style: none; /* s'applique au liste, là elle supprime le point mais on peut aussi mettre une image à la place */
+    display: flex; /* aligne les éléments à la suite */
+    align-items: center; /* aligne ici centre verticalement les éléments */
+    justify-content: space-between; /* répartie les éléments sur toute la largeur*/
+    margin: 0; /* Supprime les marges par défaut; (margin) permet quant à elle de créer un espace supplémentaire à l'extérieur de l'élément.*/ 
+    padding: 0; /* Supprime les espacements internes */
+}
+
+nav ul li a{ /* concerne les liens */
+    text-decoration: none; /* supprime le soulignement*/
+    display: flex; /* permet d'alignier les images et le text*/
+    gap: 5px; /* espacement entre le texte et l'image*/
+    align-items: center; /* permet ici de centrer mon image avec le texte */
+    color: rgb(0, 41, 131);
+}
+
+nav ul li a:hover{ /* 'hover' permet d'appliquer un style spécifique lorsque l'on va passer la souris sur un éléments*/
+    color: rgb(113, 95, 227); /* change la couleur de mes liens quand je passe ma souris dessus*/
+}
+
+nav ul li a img:hover {
+    transform: scale(1.1); /* Agrandit légèrement le logo */
+    transition: transform 0.3s ease-in-out;
+}

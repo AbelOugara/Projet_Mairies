@@ -1,0 +1,29 @@
+body{
+    margin: 0; /* permet d'éviter un espacement blanc autours du main*/
+}
+main{
+    background: linear-gradient(rgb(206, 241, 255), rgb(137, 206, 255));
+    font-size: 20px; /*Taille de la police*/
+    padding: 133px;
+}
+
+section:first-child{ /* mon premier section ( je n'ai pas besoin de lui créer un 'id'*/
+    text-align: center;
+    padding: 5px; /*permet de créer un espace supplémentaire à l'intérieur de mon élément*/
+    box-shadow: 60px -16px rgb(169, 228, 255), 0 3px 5px rgba(0, 0, 0, 0.1); /*permet de faire une ombre (pas nécessaire)*/
+    
+}
+
+section h1{
+    color: rgb(0, 0, 0);
+}
+
+section:last-child{
+    padding: 40px;
+}
+
+
+section h2 {
+    margin: 5px; /* Ajuste selon tes besoins */
+    color: rgb(50, 50, 50); /* Couleur adaptée au reste de ton design */
+}

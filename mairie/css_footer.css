@@ -1,0 +1,23 @@
+body{
+    margin: 0; /* permet d'éviter un espacement blanc autours de mon footer*/
+}
+
+footer {
+    background: linear-gradient( to left, rgb(252, 237, 255), rgb(208, 242, 255));
+    color: rgb(0, 106, 255);
+    font-size: 16px; /*Taille de la police*/
+    text-align: center; /* met le texte au milieu*/
+    padding: 1px; /* rajoute un ptit espace interne*/
+    border-top: 8px solid black; /* met une fine ligne au dessus du footer */
+    
+    position: sticky; /* Rend le footer fixe */
+    bottom: 0; /* Fixe en bas */
+    z-index: 1000;
+}
+
+#contenu{
+    padding: 8px; /*c'est pour pas que mon text soit coller à ma ligne du dessus*/
+    color: rgb(0, 0, 0);
+    font-style: italic; /* style de la police*/
+    border-top: 2px solid gold; /* met une fine ligne au dessus de mon div */
+}
